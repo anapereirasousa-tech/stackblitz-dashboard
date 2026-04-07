@@ -1,0 +1,102 @@
+{
+  "loja": "ShopFlow",
+  "actualizado": "2026-03-11",
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Portátil ShopFlow Pro 15",
+      "categoria": "Portáteis",
+      "preco": 899.99,
+      "stock": 12,
+      "descricao": "Intel Core i7, 16GB RAM, SSD 512GB, ecrã 15.6' FHD"
+    },
+    {
+      "id": 2,
+      "nome": "Portátil ShopFlow Ultra 13",
+      "categoria": "Portáteis",
+      "preco": 1149.99,
+      "stock": 5,
+      "descricao": "Intel Core i9, 32GB RAM, SSD 1TB, ecrã 13.3' OLED"
+    },
+    {
+      "id": 3,
+      "nome": "Portátil ShopFlow Basic 14",
+      "categoria": "Portáteis",
+      "preco": 499.99,
+      "stock": 0,
+      "descricao": "Intel Core i3, 8GB RAM, SSD 256GB, ecrã 14' HD"
+    },
+    {
+      "id": 4,
+      "nome": "Portátil ShopFlow Gaming 17",
+      "categoria": "Portáteis",
+      "preco": 1599.99,
+      "stock": 3,
+      "descricao": "AMD Ryzen 9, 32GB RAM, SSD 1TB, GPU RTX 4070, ecrã 17.3' 144Hz"
+    },
+    {
+      "id": 5,
+      "nome": "Rato Ergonómico SF-M1",
+      "categoria": "Periféricos",
+      "preco": 49.99,
+      "stock": 34,
+      "descricao": "Rato sem fios, DPI ajustável, bateria 6 meses, compatível Windows/Mac"
+    },
+    {
+      "id": 6,
+      "nome": "Teclado Mecânico SF-K2",
+      "categoria": "Periféricos",
+      "preco": 89.99,
+      "stock": 18,
+      "descricao": "Switches Cherry MX Red, retroiluminado RGB, layout PT, USB-C"
+    },
+    {
+      "id": 7,
+      "nome": "Headset SF-H1 Pro",
+      "categoria": "Periféricos",
+      "preco": 79.99,
+      "stock": 22,
+      "descricao": "Som 7.1 virtual, microfone removível, almofadas de espuma memory foam"
+    },
+    {
+      "id": 8,
+      "nome": "Webcam SF-W1 4K",
+      "categoria": "Periféricos",
+      "preco": 129.99,
+      "stock": 9,
+      "descricao": "Resolução 4K 30fps, autofocus, microfone duplo integrado, USB-C"
+    },
+    {
+      "id": 9,
+      "nome": "Monitor SF-D27 QHD",
+      "categoria": "Monitores",
+      "preco": 349.99,
+      "stock": 7,
+      "descricao": "27 polegadas, resolução 2560x1440, IPS, 75Hz, HDMI + DisplayPort"
+    },
+    {
+      "id": 10,
+      "nome": "Monitor SF-D24 FHD",
+      "categoria": "Monitores",
+      "preco": 199.99,
+      "stock": 15,
+      "descricao": "24 polegadas, resolução 1920x1080, VA, 144Hz, HDMI"
+    },
+    {
+      "id": 11,
+      "nome": "Hub USB-C SF-U1 7-em-1",
+      "categoria": "Acessórios",
+      "preco": 39.99,
+      "stock": 41,
+      "descricao": "USB-C, 3x USB-A, HDMI 4K, leitor SD/microSD, entrega de energia 100W"
+    },
+    {
+      "id": 12,
+      "nome": "Mochila SF-B1 15.6\"",
+      "categoria": "Acessórios",
+      "preco": 59.99,
+      "stock": 28,
+      "descricao": "Compatível com portáteis até 15.6\", bolso anti-roubo, USB de carregamento"
+    }
+  ]
+}

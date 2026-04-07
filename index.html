@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopFlow Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <!-- ═══ CABEÇALHO ═══ -->
+    <header class="sf-header">
+        <div class="sf-header__logo">
+            <span class="sf-logo-icon">SF</span>
+            <div>
+                <h1>ShopFlow Dashboard</h1>
+                <p>Loja de equipamentos tecnológicos — Porto</p>
+            </div>
+        </div>
+        <div class="sf-header__info">
+            <span id="relogio" class="sf-relogio">--:--:--</span>
+            <span id="data-hoje" class="sf-data">--/--/----</span>
+        </div>
+    </header>
+ 
+    <!-- ═══ GRELHA PRINCIPAL ═══ -->
+    <main class="sf-grid">
+ 
+        <!-- PAINEL 1 — STOCK (Sessão 3) -->
+        <section class="sf-painel sf-painel--stock" id="painel-stock">
+            <div class="sf-painel__cabecalho">
+                <h2>Stock de Produtos</h2>
+                <span class="sf-badge" id="badge-stock">0 produtos</span>
+            </div>
+            <!-- Substituir a secção de filtros no painel de stock -->
+            <div class="sf-painel__filtros">
+              <button class="sf-btn sf-btn--activo" data-categoria="todos">Todos</button>
+              <button class="sf-btn" data-categoria="Portáteis">Portáteis</button>
+              <button class="sf-btn" data-categoria="Periféricos">Periféricos</button>
+              <button class="sf-btn" data-categoria="Monitores">Monitores</button>
+              <button class="sf-btn" data-categoria="Acessórios">Acessórios</button>
+            </div>
+
+            <div id="lista-produtos" class="sf-lista-produtos">
+                <p class="sf-placeholder">A carregar produtos...</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 2 — VENDAS EM TEMPO REAL (Sessão 4) -->
+        <section class="sf-painel sf-painel--vendas" id="painel-vendas">
+            <div class="sf-painel__cabecalho">
+                <h2>Vendas em Tempo Real</h2>
+                <span class="sf-indicador sf-indicador--offline" id="indicador-ws">
+                    Desligado
+                </span>
+            </div>
+            <div class="sf-vendas-contador">
+                <div class="sf-metrica">
+                    <span class="sf-metrica__valor" id="total-vendas">0</span>
+                    <span class="sf-metrica__label">Encomendas hoje</span>
+                </div>
+                <div class="sf-metrica">
+                    <span class="sf-metrica__valor" id="total-receita">0,00 EUR</span>
+                    <span class="sf-metrica__label">Receita do dia</span>
+                </div>
+            </div>
+            <div class="sf-ws-barra" id="ws-barra"></div>
+            <div id="feed-vendas" class="sf-feed">
+                <p class="sf-placeholder">Aguarda ligação WebSocket...</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 3 — METEOROLOGIA (Sessão 5) -->
+        <section class="sf-painel sf-painel--meteo" id="painel-meteo">
+            <div class="sf-painel__cabecalho">
+                <h2>Porto — Meteorologia</h2>
+            </div>
+            <div class="sf-meteo-conteudo" id="meteo-conteudo">
+                <p class="sf-placeholder">API ligada na Sessão 5</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 4 — CÂMBIOS (Sessão 5) -->
+        <section class="sf-painel sf-painel--cambios" id="painel-cambios">
+            <div class="sf-painel__cabecalho">
+                <h2>Câmbios EUR/USD</h2>
+            </div>
+            <div id="cambios-conteudo">
+                <p class="sf-placeholder">API ligada na Sessão 5</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 5 — IOT ARMAZÉM (Sessão 7) -->
+        <section class="sf-painel sf-painel--iot" id="painel-iot">
+            <div class="sf-painel__cabecalho">
+                <h2>Armazém — IoT</h2>
+                <span class="sf-indicador sf-indicador--offline" id="indicador-mqtt">
+                    Desligado
+                </span>
+            </div>
+            <div id="iot-conteudo">
+                <p class="sf-placeholder">MQTT ligado na Sessão 7</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 6 — GRÁFICO DE VENDAS (Sessão 8) -->
+        <section class="sf-painel sf-painel--grafico" id="painel-grafico">
+            <div class="sf-painel__cabecalho">
+                <h2>Vendas por Hora</h2>
+            </div>
+            <div id="grafico-conteudo">
+                <p class="sf-placeholder">Chart.js adicionado na Sessão 8</p>
+            </div>
+        </section>
+ 
+        <!-- PAINEL 7 — ASSISTENTE IA (Sessão 8) -->
+        <section class="sf-painel sf-painel--chatbot" id="painel-chatbot">
+            <div class="sf-painel__cabecalho">
+                <h2>Assistente ShopFlow</h2>
+            </div>
+            <div class="sf-chat">
+                <div id="chat-mensagens" class="sf-chat__mensagens">
+                    <div class="sf-chat__msg sf-chat__msg--bot">
+                        Olá! Sou o assistente da ShopFlow. Estou disponível na Sessão 8.
+                    </div>
+                </div>
+                <div class="sf-chat__input">
+                    <input type="text" id="chat-input" placeholder="Escreva a sua questão..." disabled>
+                    <button id="chat-enviar" disabled>Enviar</button>
+                </div>
+            </div>
+        </section>
+ 
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
